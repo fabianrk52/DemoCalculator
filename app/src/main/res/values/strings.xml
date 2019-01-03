@@ -1,10 +1,14 @@
 <resources>
     <string name="app_name">DemoCalculator</string>
-    <string name="login">Login with other Email</string>
+    <string name="login">Login with Email</string>
     <string name="signUp">Sign Up</string>
     <string name="facebook_app_id">512515125857400</string> <string name="fb_login_protocol_scheme">fb512515125857400</string>
     <string name="personal">Personal Nutrition Assistant</string>
     <string name="g_logIn">Login with Google</string>
     <string name="fb_logIn">Login with Facebook</string>
+    <string name="forgot_login">Forgot Password?</string>
+    <string name="email_login">Email</string>
+    <string name="password_login">Password</string>
+    <string name="login_login">Log In</string>
 
 </resources>
