@@ -5,52 +5,106 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/colorBeginning"
     >
+
 
     <ImageView
         android:id="@+id/Logo"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:layout_marginTop="80dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.facebook.login.widget.LoginButton
-        android:id="@+id/login_button_fb"
-        android:layout_width="280dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="40dp"
-        android:textSize="18dp"
+    <TextView
+        android:id="@+id/personal"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/personal"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.WindowTitle"
+        android:textColor="@color/personal"
+        android:textSize="26sp"
+        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Logo" />
 
     <Button
+        android:id="@+id/login_button_fb"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="280dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/fb_login_btn"
+        android:fontFamily="@font/roboto"
+        android:text="@string/fb_logIn"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personal" />
+
+
+    <Button
+        android:id="@+id/google"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="280dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/g_login_btn"
+        android:fontFamily="@font/roboto"
+        android:text="@string/g_logIn"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button_fb" />
+
+
+
+    <Button
         android:id="@+id/login"
         android:layout_width="280dp"
         android:layout_height="42dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/loginbtn"
+        android:fontFamily="@font/roboto"
         android:text="@string/login"
-        android:textSize="18dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_button_fb" />
+        app:layout_constraintTop_toBottomOf="@+id/google" />
 
     <Button
         android:id="@+id/signup"
         android:layout_width="280dp"
         android:layout_height="42dp"
-        android:layout_marginTop="140dp"
-        android:text="@string/signup"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/signupbtn"
+        android:fontFamily="@font/roboto"
         android:onClick="SignUp"
-        android:textSize="18dp"
+        android:text="@string/signUp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_button_fb" />
+        app:layout_constraintTop_toBottomOf="@+id/login" />
 
 </android.support.constraint.ConstraintLayout>

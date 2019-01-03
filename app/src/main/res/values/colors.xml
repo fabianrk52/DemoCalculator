@@ -3,6 +3,10 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="colorBeginning">#4286f4</color>
     <color name="black">#000000</color>
+    <color name="personal">#008db1</color>
+    <color name="signUp">#4c7a34</color>
+    <color name="loginEmail">#99a534</color>
+
+
 </resources>
