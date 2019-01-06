@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     public void LogIn(View v) {
         String button_id;
         button_id = ((Button) v).getText().toString();
-        if (button_id.equals("Sign Up")) {
+        if (button_id.equals("Login with Email")) {
             Intent Login = new Intent(this, LogInActivity.class);
             startActivity(Login);
         }
