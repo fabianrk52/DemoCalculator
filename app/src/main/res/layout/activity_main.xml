@@ -72,7 +72,6 @@
         app:layout_constraintTop_toBottomOf="@+id/login_button_fb" />
 
 
-
     <Button
         android:id="@+id/login"
         android:layout_width="280dp"
@@ -80,6 +79,7 @@
         android:layout_marginTop="30dp"
         android:background="@drawable/loginbtn"
         android:fontFamily="@font/roboto"
+        android:onClick="LogIn"
         android:text="@string/login"
         android:textAlignment="center"
         android:textAllCaps="false"
@@ -96,7 +96,6 @@
         android:layout_marginTop="30dp"
         android:background="@drawable/signupbtn"
         android:fontFamily="@font/roboto"
-        android:onClick="SignUp"
         android:text="@string/signUp"
         android:textAlignment="center"
         android:textAllCaps="false"

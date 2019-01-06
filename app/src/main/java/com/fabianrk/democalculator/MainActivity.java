@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
+import android.widget.Button;
+import android.content.Intent;
+import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,9 +18,14 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide(); // hide the title bar
         setContentView(R.layout.activity_main);
     }
-    void SignUp(View v){
 
-        Log.i("signup","Sign Up!");
-
+    public void LogIn(View v) {
+        String button_id;
+        button_id = ((Button) v).getText().toString();
+        if (button_id.equals("Sign Up")) {
+            Intent Login = new Intent(this, LogInActivity.class);
+            startActivity(Login);
+        }
     }
 }
+
